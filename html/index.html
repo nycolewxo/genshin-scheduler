@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Genshin Impact Calendar Search</title>
+      <style>
+         body,form{
+         margin:20px auto;
+         max-width:800px;
+         overflow-x:hidden;
+         }
+         fieldset{
+         display: flex;
+         }
+         select,input#selection{
+         flex-grow:50;
+         margin: 0 50px;
+         }
+         input#search{
+         flex-grow:50;
+         margin: 0 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <form action="search" method="get">
+         <fieldset>
+            <legend>Genshin Impact Calendar Search</legend>
+            <label for="selection">Character/Weapon:</label>
+            <select id="selection" name="selection">
+               <option value="">Select Option</option>
+               <option value="character">Character</option>
+               <option value="weapon">Weapon</option>
+            </select>
+            <br>
+            
+            <label for="search">Search:</label>
+            <input id="search" name="search" type="text" />
+            <input type="submit" value="Submit" />
+         </fieldset>
+      </form>
+   </body>
+</html>
